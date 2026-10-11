@@ -51,5 +51,29 @@ Yet another calculator based on BODMAS rule :)
 
 `<PROJECT_DIR>/target/site/jacoco/index.html`
 
+## Continuous Integration
+
+This project uses GitHub Actions for continuous integration.
+
+The CI workflow automatically runs the Maven test suite whenever changes
+are pushed to the repository or a pull request is created.
+
+The workflow performs the following steps:
+
+1. Checks out the repository.
+2. Sets up Java 11.
+3. Runs the JUnit 5 tests using Maven.
+4. Generates the JaCoCo coverage report.
+
+The workflow configuration is located in:
+
+`.github/workflows/maven.yml`
+
+## Testing
+
+The project includes JUnit 5 tests using black-box and white-box testing,
+boundary value analysis, equivalence partitioning, path-based testing,
+and data-flow testing.
+
 ## Author
 Kanishka Dilshan (kdkanishka@gmail.com)
